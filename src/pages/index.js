@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import 'bulma/css/bulma.css'
 import "fontawesome-free-5.7.2-web/js/all"
 
-import backgroundImage from '../images/index_background.jpg';
+import backgroundImage from '../images/background_2.jpg';
 import logo from '../images/logo.png'
 
 // import components
@@ -27,34 +27,35 @@ const IndexPage = () => {
         </a>
       </div>
 
-      <div class="hero-body" style={{
-        marginTop: "4%"
-      }}>
+      <div class="hero-body">
         <div class="container has-text-centered">
-          <a class="button is-warning is-outlined is-inverted is-size-4 has-text-weight-bold" href="/about"> Click to Explore </a>
+          <a class="button is-primary is-inverted is-outlined is-size-4 has-text-weight-bold" href="/about"> Click to Explore the unusual mind of an engineer</a>
         </div>
       </div>
 
       <div class="hero-foot">
+        <div class="content has-text-centered">
+          <h5 class="has-text-white"> Picture shot at Harvey Cedars </h5>
+        </div>
         <div class="tabs is-centered" style={{
           padding: "2%",
         }}>
           <ul>
             <a href="https://github.com/peterbaile" >
-              <span class="icon is-small has-text-black">
-                <i class="fab fa-github fa-2x" > </i>
+              <span class="icon has-text-white">
+                <i class="fab fa-github fa-2x" aria-hidden="true"> </i>
               </span>
             </a>
 
             <a href="https://www.linkedin.com/in/peter-chen-ba7847153/">
-              <span class="icon has-text-black">
-                <i class="fab fa-linkedin fa-2x"></i>
+              <span class="icon has-text-white">
+                <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
               </span>
             </a>
 
             <a>
-              <span class="icon has-text-black">
-                <i class="fab fa-facebook fa-2x"></i>
+              <span class="icon has-text-white">
+                <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
               </span>
             </a>
           </ul>

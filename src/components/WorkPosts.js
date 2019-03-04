@@ -50,7 +50,6 @@ const OddPosts = ({ data }) => {
                     }}>
                         <h3> {post.node.frontmatter.name} </h3>
                         {post.node.frontmatter.description}
-                        <a href="#">#css</a> <a href="#">#responsive</a>
                         <br />
                         <time datetime="2016-1-1">{post.node.frontmatter.date}</time>
                     </div>
