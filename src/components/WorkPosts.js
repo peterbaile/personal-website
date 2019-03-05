@@ -1,77 +1,45 @@
 import React from "react"
-import { Link } from 'gatsby'
 
-const EvenPosts = ({ data }) => {
+const Posts = ({ data }) => {
     const posts = data.allFile.edges;
-    return posts.map((post, index) => {
-        if (index % 2 === 0) {
-            return (
-                <div class="card" style={{
-                    marginBottom: "5%"
-                }}>
-                    <a href={post.node.childMarkdownRemark.frontmatter.path}>
-                        <div class="card-image">
+    return posts.map(post => {
+        return (
+            <div class="box">
+                <article class="media">
+                    <div class="media-left">
+                        <figure class="image is-128x128">
                             <img src={post.node.childMarkdownRemark.frontmatter.image} />
-                        </div>
-                    </a>
-                    <hr />
-
-                    <div class="content" style={{
-                        padding: "3%"
-                    }}>
-                        <h3> {post.node.childMarkdownRemark.frontmatter.name} </h3>
-                        {post.node.childMarkdownRemark.frontmatter.description}
-                        <br />
-                        <time datetime="2016-1-1">{post.node.childMarkdownRemark.frontmatter.date}</time>
+                        </figure>
                     </div>
-                </div>
-            )
-        }
-    })
-}
 
-const OddPosts = ({ data }) => {
-    const posts = data.allFile.edges;
-    return posts.map((post, index) => {
-        if (index % 2 !== 0) {
-            return (
-                <div class="card" style={{
-                    marginBottom: "5%"
-                }}>
-                    <a href={post.node.childMarkdownRemark.frontmatter.path}>
-                        <div class="card-image">
-                            <img src={post.node.childMarkdownRemark.frontmatter.image} />
+                    <div class="media-content">
+                        <div class="content">
+                            <h3> {post.node.childMarkdownRemark.frontmatter.name} </h3>
+                            Roles: {post.node.childMarkdownRemark.frontmatter.description}
+                            <br />
+                            <time> Working Period: {post.node.childMarkdownRemark.frontmatter.date}</time>
+                            <br />
+                            <br />
+                            <a class="button" href={post.node.childMarkdownRemark.frontmatter.path}>
+                                <span> Read More </span>
+                                <span class="icon">
+                                    <i class="fas fa-angle-double-right"></i>
+                                </span>
+                            </a>
                         </div>
-                    </a>
-                    <hr />
-
-                    <div class="content" style={{
-                        padding: "3%"
-                    }}>
-                        <h3> {post.node.childMarkdownRemark.frontmatter.name} </h3>
-                        {post.node.childMarkdownRemark.frontmatter.description}
-                        <br />
-                        <time datetime="2016-1-1">{post.node.childMarkdownRemark.frontmatter.date}</time>
                     </div>
-                </div >
-            )
-        }
+                </article>
+            </div>
+        )
     })
 }
 
 const WorkPosts = ({ data }) => {
-    const posts = data.allFile.edges;
-
     return (
         <div class="columns is-centered">
-            <div class="column is-one-third">
-                <EvenPosts data={data} />
+            <div class="column is-half">
+                <Posts data={data} />
             </div>
-
-            <div class="column is-one-third">
-                <OddPosts data={data} />
-            </div>
-
         </div>
     )
 }

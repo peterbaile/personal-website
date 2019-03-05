@@ -12,7 +12,15 @@ const WorkPage = ({ data }) => {
     <div>
       <Nav />
       <hr />
-      <WorkPosts data={data} />
+
+      <div class="content" style={{
+        margin: "2%"
+      }}>
+        <h1 class="has-text-centered"> Explore More~ 😃 </h1>
+        <br />
+        <WorkPosts data={data} />
+      </div>
+
       <Footer />
     </div>
   )
