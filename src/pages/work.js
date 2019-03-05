@@ -16,7 +16,7 @@ const WorkPage = ({ data }) => {
       <div class="content" style={{
         margin: "2%"
       }}>
-        <h1 class="has-text-centered"> Explore More~ 😃 </h1>
+        <h1 class="has-text-centered"> Explore More What I'm Involved~ 😃 </h1>
         <br />
         <WorkPosts data={data} />
       </div>
