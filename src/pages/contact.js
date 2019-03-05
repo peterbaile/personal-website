@@ -9,7 +9,7 @@ const ContactPage = () => (
     <div>
         <Nav />
         <hr />
-        <ContactForm/>
+        <ContactForm />
     </div>
 )
 

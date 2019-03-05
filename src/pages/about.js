@@ -14,7 +14,7 @@ const AboutPage = ({ data }) => {
             <div class="content" style={{
                 margin: "2%"
             }}>
-                <h1 class="has-text-centered"> Something Interesting :) </h1>
+                <h1 class="has-text-centered"> Something Interesting~ 😀 </h1>
                 <br />
 
                 <div class="columns is-centered is-mobile" >
@@ -29,7 +29,7 @@ const AboutPage = ({ data }) => {
                             I was born in Changzhou, China and lived in Shanghai for 14 years before my family moved to Hong Kong.
                             <br />
                             <br />
-                            I think as a person we have a passion for something, no matter small or large. And for me, that passion is to be a great entrepreneur.
+                            I think as people we have passion for something, no matter small or large. And for me, that passion is to be a great entrepreneur.
                             <br />
                             <br />
                             <blockquote> Stay Hungry, Stay Foolish </blockquote>
@@ -40,6 +40,7 @@ const AboutPage = ({ data }) => {
                 <div class="columns is-centered is-mobile" >
                     <div class="column is-two-thirds">
                         <p dangerouslySetInnerHTML={{ __html: aboutPost.html }}></p>
+                        <a class="button is-outlined"> View Resume </a>
                     </div>
                 </div>
             </div>

@@ -14,58 +14,64 @@ class ContactForm extends Component {
 
     submitForm = e => {
         e.preventDefault();
-        
+
     }
 
     render() {
         return (
-            <div class="content" style={{margin: "2%"}}>
+            <div style={{margin:"2%"}}>
+                <div class="content has-text-centered">
+                    <h1>Feel free to approach me~ 😄</h1>
+                </div>
 
-                <form onSubmit={this.submitForm.bind(this)}>
-                    <div class="field">
-                        <label class="label">Name</label>
-                        <div class="control">
-                            <input class="input" type="text" onChange={e => this.setState({name: e.target.value})} placeholder="Text input" />
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <div class="">
-                            <input class="input" type="email" onChange={e => this.setState({email: e.target.value})} placeholder="Email input" />
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Subject</label>
-                        <div class="control">
-                            <div class="select">
-                                <select>
-                                    <option>Select dropdown</option>
-                                    <option>With options</option>
-                                </select>
+                <div class="columns is-centered is-mobile">
+                    <div class="column is-two-thirds">
+                        <form onSubmit={this.submitForm.bind(this)}>
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                    <input class="input" type="text" onChange={e => this.setState({ name: e.target.value })} placeholder="Text input" />
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="field">
-                        <label class="label">Message</label>
-                        <div class="control">
-                            <textarea class="textarea" placeholder="Textarea" onChange={e => this.setState({message: e.target.value})}></textarea>
-                        </div>
-                    </div>
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="">
+                                    <input class="input" type="email" onChange={e => this.setState({ email: e.target.value })} placeholder="Email input" />
+                                </div>
+                            </div>
 
-                    <div class="field is-grouped">
-                        <div class="control">
-                            <button class="button is-link">Submit</button>
-                        </div>
-                        <div class="control">
-                            <button class="button is-text">Cancel</button>
-                        </div>
+                            <div class="field">
+                                <label class="label">Subject</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select>
+                                            <option>Select dropdown</option>
+                                            <option>With options</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Textarea" onChange={e => this.setState({ message: e.target.value })}></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button is-link">Submit</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button is-text">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
-
         )
     }
 }
