@@ -10,8 +10,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
+        name: `aboutPost`,
+        path: `${__dirname}/src/pages/aboutPosts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `workPosts`,
+        path: `${__dirname}/src/pages/projectPosts`,
       },
     },
     `gatsby-transformer-sharp`,

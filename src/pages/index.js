@@ -29,7 +29,7 @@ const IndexPage = () => {
 
       <div class="hero-body">
         <div class="container has-text-centered">
-          <a class="button is-primary is-inverted is-outlined is-size-4 has-text-weight-bold" href="/about"> Click to Explore the unusual mind of an engineer</a>
+          <a class="button is-primary is-inverted is-outlined is-size-4 has-text-weight-bold" href="/about"> Explore the unusual mind of an engineer</a>
         </div>
       </div>
 

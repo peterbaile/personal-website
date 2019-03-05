@@ -7,34 +7,37 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import WorkPosts from '../components/WorkPosts';
 
-const WorkPage = ({data}) => {
-    return (
-        <div>
-            <Nav />
-            <hr />
-            <WorkPosts data={data}/>
-            <Footer />
-        </div>
-    )
+const WorkPage = ({ data }) => {
+  return (
+    <div>
+      <Nav />
+      <hr />
+      <WorkPosts data={data} />
+      <Footer />
+    </div>
+  )
 }
 
 export const allWorkQuery = graphql`
-query fetchAllWork{
-    allMarkdownRemark{
-      edges{
-        node{
-          id
+{
+  allFile(filter:{sourceInstanceName:{eq:"workPosts"}}){
+    edges{
+      node{
+        sourceInstanceName
+        childMarkdownRemark{
           frontmatter{
+            name
             path
             date
-            name
             description
             image
           }
+          html
         }
       }
     }
   }
+}
 `
 
 export default WorkPage;

@@ -14,30 +14,33 @@ exports.createPages = ({boundActionCreators, graphql}) => {
     const workPostTemplate = path.resolve('src/pages/templates/workPostTemp.js');
 
     return graphql(`
-    query fetchAllWork{
-        allMarkdownRemark{
-          edges{
-            node{
-              id
+    {
+      allFile(filter:{sourceInstanceName:{eq:"workPosts"}}){
+        edges{
+          node{
+            sourceInstanceName
+            childMarkdownRemark{
               frontmatter{
+                name
                 path
                 date
-                name
                 description
                 image
               }
+              html
             }
           }
         }
       }
+    }
     `).then(res => {
         if (res.errors){
             return Promise.reject(res.errors);
         }
 
-        res.data.allMarkdownRemark.edges.forEach(({node}) => {
+        res.data.allFile.edges.forEach(({node}) => {
             createPage({
-                path: node.frontmatter.path,
+                path: node.childMarkdownRemark.frontmatter.path,
                 component: workPostTemplate
             })
         })
