@@ -3,7 +3,7 @@ import Nav from '../../components/Nav';
 
 const WorkPostTemp = ({ data }) => {
   const post = data.markdownRemark;
-  
+
   if (post == null) {
     return null;
   }
