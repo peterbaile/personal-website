@@ -55,7 +55,7 @@ A quick look at the top-level files and directories.
 
 ## 🎓 Progress
 
-# Features under the way
+### Features under the way
 - [ ] Google Analytics
 - [ ] Complete Projects Description
 - [ ] Contact form submission
