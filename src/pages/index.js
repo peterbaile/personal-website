@@ -1,14 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import 'bulma/css/bulma.css'
-import "fontawesome-free-5.7.2-web/js/all"
+import "../styles/index.css"
 
 import backgroundImage from '../images/background_2.jpg';
 import logo from '../images/logo.png'
 
 // import components
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
 
 const IndexPage = () => {
   return (

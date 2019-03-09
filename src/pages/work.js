@@ -1,6 +1,6 @@
 import React from "react"
 import 'bulma/css/bulma.css'
-import "fontawesome-free-5.7.2-web/js/all"
+import "../styles/index.css"
 
 // import components
 import Nav from '../components/Nav';
