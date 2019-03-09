@@ -2,8 +2,6 @@
 
 This README aims to walk you through the entire architecture of my [personal website](https://peterchen.netlify.com/)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
-
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories.
