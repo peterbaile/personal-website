@@ -8,7 +8,7 @@ const AboutPage = ({ data }) => {
     const aboutPost = data.markdownRemark;
     return (
         <div>
-            <SEO/>
+            <SEO title="About"/>
             <Nav />
             <hr />
 

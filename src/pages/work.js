@@ -5,10 +5,12 @@ import 'bulma/css/bulma.css'
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import WorkPosts from '../components/WorkPosts';
+import SEO from '../components/seo';
 
 const WorkPage = ({ data }) => {
   return (
     <div>
+      <SEO title="Work & Projects"/>
       <Nav />
       <hr />
 

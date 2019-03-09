@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 import 'bulma/css/bulma.css'
 
 import backgroundImage from '../images/background_2.jpg';
 import logo from '../images/logo.png'
 
 // import components
+import SEO from '../components/seo';
 
 const IndexPage = () => {
   return (
@@ -15,6 +15,8 @@ const IndexPage = () => {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center"
     }}>
+
+      <SEO />
 
       <div class="hero-head has-text-centered" style={{
         marginTop: "2%"
