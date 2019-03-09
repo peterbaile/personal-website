@@ -1,10 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const Wrapper = styled.section`
-padding: 4em;
-background: papayawhip;
-`
 
 const Footer = () => (
     <div class="content has-text-centered" style={{
