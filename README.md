@@ -1,28 +1,8 @@
-## Personal Website
+# Personal Website
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This README aims to walk you through the entire architecture of my [personal website](https://peterchen.netlify.com/)
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
-
-## 🚀 Quick start
-
-1.  **Start The Server**
-
-    Test
-
-    ```sh
-    # start the server
-    npm start
-    ```
-
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
 
 ## 🧐 What's inside?
 
@@ -56,4 +36,4 @@ A quick look at the top-level files and directories.
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://peterchen.netlify.com/)
+[![View on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://peterchen.netlify.com/)
