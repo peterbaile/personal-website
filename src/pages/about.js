@@ -2,12 +2,13 @@ import React from 'react'
 
 // import components
 import Nav from '../components/Nav';
-import Footer from '../components/Footer';
+import SEO from '../components/seo';
 
 const AboutPage = ({ data }) => {
     const aboutPost = data.markdownRemark;
     return (
         <div>
+            <SEO/>
             <Nav />
             <hr />
 

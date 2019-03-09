@@ -28,7 +28,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         start_url: `/`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
