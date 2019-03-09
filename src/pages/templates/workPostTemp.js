@@ -3,6 +3,11 @@ import Nav from '../../components/Nav';
 
 const WorkPostTemp = ({ data }) => {
   const post = data.markdownRemark;
+  
+  if (post == null) {
+    return null;
+  }
+
   return (
     <>
       <Nav />
@@ -23,8 +28,8 @@ const WorkPostTemp = ({ data }) => {
         <div class="column is-half">
           <div class="content">
             <h1 class="has-text-centered"> {post.frontmatter.name} </h1>
-            <br/>
-            <p dangerouslySetInnerHTML={{__html: post.html}}></p>
+            <br />
+            <p dangerouslySetInnerHTML={{ __html: post.html }}></p>
           </div>
         </div>
       </div>
