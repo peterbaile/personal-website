@@ -8,7 +8,7 @@ const AboutPage = ({ data }) => {
     const aboutPost = data.markdownRemark;
     return (
         <div>
-            <SEO title="About"/>
+            <SEO title="About" />
             <Nav />
             <hr />
 
@@ -41,7 +41,7 @@ const AboutPage = ({ data }) => {
                 <div class="columns is-centered is-mobile" >
                     <div class="column is-two-thirds">
                         <p dangerouslySetInnerHTML={{ __html: aboutPost.html }}></p>
-                        <a class="button is-outlined"> View Resume </a>
+                        <a class="button is-outlined" href="https://drive.google.com/file/d/1_-3k_SiyRiFeJPIi5x_mZN4aBXbKbHGM/view?usp=sharing" target="_blank"> View Resume </a>
                     </div>
                 </div>
             </div>
