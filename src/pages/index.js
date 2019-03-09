@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import 'bulma/css/bulma.css'
-import "../styles/index.css"
 
 import backgroundImage from '../images/background_2.jpg';
 import logo from '../images/logo.png'

@@ -1,6 +1,5 @@
 import React from "react"
 import 'bulma/css/bulma.css'
-import "../styles/index.css"
 
 // import components
 import Nav from '../components/Nav';
