@@ -32,6 +32,7 @@ A quick look at the top-level files and directories.
 - [ ] Contact form submission
 - [ ] Navigation Bar
 - [ ] Mobile Responsive
+- [ ] Chinese Version
 
 ### Features completed
 - [x] Projects & Work Experience Posts
