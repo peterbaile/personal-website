@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import 'bulma/css/bulma.css'
 
 import backgroundImage from '../images/background_2.jpg';
@@ -28,7 +29,9 @@ const IndexPage = () => {
 
       <div class="hero-body">
         <div class="container has-text-centered">
-          <a class="button is-primary is-inverted is-outlined is-size-4 has-text-weight-bold" href="/about"> Explore the unusual mind of an engineer</a>
+          <Link to="/about/">
+            <a class="button is-primary is-inverted is-outlined is-size-4 has-text-weight-bold"> Explore the unusual mind of an engineer</a>
+          </Link>
         </div>
       </div>
 
