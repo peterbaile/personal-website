@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal Website for Peter Baile Chen",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Peter Chen",
   "dependencies": {
     "bulma": "^0.7.4",
     "gatsby": "^2.1.19",
@@ -48,7 +48,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "git push heroku master"
   },
   "repository": {
     "type": "git",
