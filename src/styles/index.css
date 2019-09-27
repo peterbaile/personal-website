@@ -22,6 +22,6 @@
     }
 
     [class*="col-"] {
-        width: 66.66%
+        width: 100%
     }
 }
