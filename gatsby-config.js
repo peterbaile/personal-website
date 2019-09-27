@@ -27,8 +27,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
+        name: 'Peter Baile Chen',
+        short_name: 'Peter Chen',
+        description: 'Personal Website of Peter Baile Chen',
+        lang: 'en',
         start_url: '/',
-        icon: 'src/images/favicon.png',
+        icon: 'src/images/icon.png',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
