@@ -3,15 +3,13 @@ import 'bulma/css/bulma.css'
 
 // import components
 import Nav from '../components/Nav';
-import Footer from '../components/Footer';
 import WorkPosts from '../components/WorkPosts';
 import SEO from '../components/seo';
 
 const WorkPage = () => (
   <div>
     <SEO title="Work & Projects" />
-    <Nav />
-    <hr />
+    <Nav>
 
     <div
       className="content"
@@ -23,8 +21,7 @@ const WorkPage = () => (
       <br />
       <WorkPosts />
     </div>
-
-    <Footer />
+    </Nav>
   </div>
 )
 

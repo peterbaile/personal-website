@@ -21,8 +21,10 @@
     "npm": "6.8.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
+    "react-device-detect": "^1.9.10",
     "react-dom": "^16.8.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "eslint": "^6.4.0",

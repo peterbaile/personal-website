@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 const SEO = ({ title }) => (
   <Helmet>
     <meta charSet="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Peter Baile Chen" />
     <meta property="og:url" content="https://peterchen.herokuapp.com/" />
