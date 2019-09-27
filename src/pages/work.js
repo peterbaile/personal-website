@@ -14,7 +14,7 @@ const WorkPage = () => (
     <div
       className="content"
       style={{
-        margin: '2%',
+        marginTop: "5em",
       }}
     >
       <h1 className="has-text-centered"> Explore More What I'm Involved~ 😃 </h1>

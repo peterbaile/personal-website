@@ -15,8 +15,7 @@ const AboutPage = ({ data }) => {
       <div
         className="content"
         style={{
-          paddingTop: "60px",
-          margin: "2%"
+          marginTop: "5em",
         }}
       >
         <h1 className="has-text-centered"> Something Interesting~ 😀 </h1>
