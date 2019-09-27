@@ -1,34 +1,34 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: 'Personal Website',
+    description: 'Personal Website for Peter Baile Chen',
+    author: 'Peter Chen',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-catch-links`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-catch-links',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `aboutPost`,
+        name: 'aboutPost',
         path: `${__dirname}/src/pages/aboutPosts`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `workPosts`,
+        name: 'workPosts',
         path: `${__dirname}/src/pages/projectPosts`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-transformer-remark',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        start_url: `/`,
-        icon: `src/images/favicon.png`
+        start_url: '/',
+        icon: 'src/images/favicon.png',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -3,7 +3,7 @@ path: "/work/peer"
 date: "January 2019 - Present"
 name: "Peer"
 description: "Co-Founder"
-image: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/54517003_2294140760864111_8732345094671171584_n.jpg?_nc_cat=104&_nc_ht=scontent-iad3-1.xx&oh=bb2884b0887510983a5898b0323e5c2d&oe=5CDE6236"
+image: "peer.jpg"
 ---
 __Brief Description:__
 

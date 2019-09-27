@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 import 'bulma/css/bulma.css'
 
 import backgroundImage from '../images/background_2.jpg';

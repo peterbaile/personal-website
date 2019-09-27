@@ -1,47 +1,96 @@
-import React from "react"
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import PropTypes from 'prop-types'
 
-const Posts = ({ data }) => {
-    const posts = data.allFile.edges;
-    return posts.map(post => {
-        return (
-            <div class="box">
-                <article class="media">
-                    <div class="media-left">
-                        <figure class="image is-128x128">
-                            <img src={post.node.childMarkdownRemark.frontmatter.image} />
-                        </figure>
-                    </div>
+const Post = ({
+  image,
+  name,
+  description,
+  date,
+  path,
+}) => (
+  <div className="box">
+    <article className="media">
+      <div className="media-left">
+        <figure className="image is-128x128">
+          <img src={`/images/${image}`} alt={name} />
+        </figure>
+      </div>
 
-                    <div class="media-content">
-                        <div class="content">
-                            <h3> {post.node.childMarkdownRemark.frontmatter.name} </h3>
-                            Roles: {post.node.childMarkdownRemark.frontmatter.description}
-                            <br />
-                            <time> Working Period: {post.node.childMarkdownRemark.frontmatter.date}</time>
-                            <br />
-                            <br />
-                            <a class="button" href={post.node.childMarkdownRemark.frontmatter.path}>
-                                <span> Read More </span>
-                                <span class="icon">
-                                    <i class="fas fa-angle-double-right"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        )
-    })
-}
-
-const WorkPosts = ({ data }) => {
-    return (
-        <div class="columns is-centered">
-            <div class="column is-half">
-                <Posts data={data} />
-            </div>
+      <div className="media-content">
+        <div className="content">
+          <h3>
+            {name}
+          </h3>
+          {`Roles: ${description}`}
+          <br />
+          <time>
+            {`Working Period: ${date}`}
+          </time>
+          <br />
+          <br />
+          <a className="button" href={path}>
+            <span> Read More </span>
+            <span className="icon">
+              <i className="fas fa-angle-double-right" />
+            </span>
+          </a>
         </div>
-    )
+      </div>
+    </article>
+  </div>
+)
+
+const WorkPosts = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        allFile(filter:{sourceInstanceName:{eq:"workPosts"}}){
+          edges{
+            node{
+              sourceInstanceName
+              childMarkdownRemark{
+                frontmatter{
+                  name
+                  path
+                  date
+                  description
+                  image
+                }
+                html
+              }
+            }
+          }
+        }
+      }
+    `,
+  )
+  const posts = data.allFile.edges
+  return (
+    <div className="columns is-centered">
+      <div className="column is-half">
+        {
+          posts.map(post => <Post {...post.node.childMarkdownRemark.frontmatter} />) //eslint-disable-line
+        }
+      </div>
+    </div>
+  )
 }
 
-export default WorkPosts;
+Post.propTypes = {
+  image: '',
+  name: '',
+  description: '',
+  date: '',
+  path: '',
+}
+
+Post.defaultProps = {
+  image: PropTypes.string,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  date: PropTypes.string,
+  path: PropTypes.string,
+}
+
+export default WorkPosts
