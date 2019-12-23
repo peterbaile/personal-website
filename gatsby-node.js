@@ -6,43 +6,43 @@
 
 // You can delete this file if you're not using it
 
-const path = require('path');
+const path = require('path')
 
-exports.createPages = ({boundActionCreators, graphql}) => {
-    const {createPage} = boundActionCreators;
-    
-    const workPostTemplate = path.resolve('src/pages/templates/workPostTemp.js');
+exports.createPages = ({ boundActionCreators, graphql }) => {
+  const { createPage } = boundActionCreators;
 
-    return graphql(`
-    {
-      allFile(filter:{sourceInstanceName:{eq:"workPosts"}}){
-        edges{
-          node{
-            sourceInstanceName
-            childMarkdownRemark{
-              frontmatter{
-                name
-                path
-                date
-                description
-                image
-              }
-              html
+  const workPostTemplate = path.resolve('src/pages/templates/workPostTemp.js');
+
+  return graphql(`
+  {
+    allFile(filter:{sourceInstanceName:{eq:"workPosts"}}){
+      edges{
+        node{
+          sourceInstanceName
+          childMarkdownRemark{
+            frontmatter{
+              name
+              path
+              date
+              description
+              image
             }
+            html
           }
         }
       }
     }
-    `).then(res => {
-        if (res.errors){
-            return Promise.reject(res.errors);
-        }
+  }
+  `).then(res => {
+    if (res.errors) {
+      return Promise.reject(res.errors)
+    }
 
-        res.data.allFile.edges.forEach(({node}) => {
-            createPage({
-                path: node.childMarkdownRemark.frontmatter.path,
-                component: workPostTemplate
-            })
-        })
+    res.data.allFile.edges.forEach(({ node }) => {
+      createPage({
+        path: node.childMarkdownRemark.frontmatter.path,
+        component: workPostTemplate,
+      })
     })
+  })
 }

@@ -1,20 +1,9 @@
 ---
 path: "/about"
-image: "https://www.masterson-tech.com/wp-content/uploads/2018/06/masterson_logo_tall.png"
+image: "profile_picture.jpg"
 ---
-__Education:__
+Hi, I am Peter, a sophomore studying [NETS](https://www.nets.upenn.edu/) at the University of Pennsylvania.
 
-- School of Engineering & Applied Science, University of Pennyslvania | September 2018 - Present
+I was born in Changzhou, China and lived in Shanghai for 14 years before my family moved to Hong Kong.
 
-- St. Paul's Co-educational College, Hong Kong | September 2014 - August 2018
-
-- Shanghai World Foreign Language Middle School (Shanghai, China) | September 2012 - June 2014
-
-__Awards:__
-
-- Winner, Hult Prize@Penn 2019 | December 2018
-
-- Meirorious Award, International Mathematical Modeling Challenge | June 2017
-
-- Silver Medalist, I-SWEEEP 2016 | May 2016
-
+I think as people we have passion for something, no matter small or large. And for me, that passion is to be a great entrepreneur.

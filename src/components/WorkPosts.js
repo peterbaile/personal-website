@@ -9,35 +9,29 @@ const Post = ({
   date,
   path,
 }) => (
-  <div className="box">
-    <article className="media">
-      <div className="media-left">
-        <figure className="image is-128x128">
-          <img src={`/images/${image}`} alt={name} />
-        </figure>
-      </div>
-
-      <div className="media-content">
-        <div className="content">
-          <h3>
-            {name}
-          </h3>
-          {`Roles: ${description}`}
-          <br />
-          <time>
-            {`Working Period: ${date}`}
-          </time>
-          <br />
-          <br />
-          <a className="button" href={path}>
-            <span> Read More </span>
-            <span className="icon">
-              <i className="fas fa-angle-double-right" />
-            </span>
-          </a>
+  <div className="d-flex justify-content-center" style={{ marginBottom: '1rem' }}>
+    <div className="card" style={{ width: '45%' }}>
+      <div className="row">
+        <div className="col-md-3">
+          <div className="text-center">
+            <img width="50%" height="50%" className="img-fluid" src={`/images/${image}`} alt={name} />
+          </div>
+        </div>
+        <div className="col-md-9">
+          <div className="card-body" style={{ paddingLeft: '3em' }}>
+            <h5 className="card-title">{name}</h5>
+            <p className="card-text">{`Roles: ${description}`}</p>
+            <p className="card-text">{`Working Period: ${date}`}</p>
+            <a type="button" href={path} className="btn btn-labeled btn-success">
+              Read More&nbsp;
+              <span className="btn-label">
+                <i className="fas fa-angle-double-right" />
+              </span>
+            </a>
+          </div>
         </div>
       </div>
-    </article>
+    </div>
   </div>
 )
 
@@ -67,12 +61,10 @@ const WorkPosts = () => {
   )
   const posts = data.allFile.edges
   return (
-    <div className="columns is-centered">
-      <div className="column is-half">
-        {
-          posts.map(post => <Post {...post.node.childMarkdownRemark.frontmatter} />) //eslint-disable-line
-        }
-      </div>
+    <div style={{ marginTop: '10em' }}>
+      {
+        posts.map(post => <Post {...post.node.childMarkdownRemark.frontmatter} />)
+      }
     </div>
   )
 }
