@@ -1,6 +1,6 @@
 # Personal Website
 
-This README aims to walk you through the entire architecture of my [personal website](https://peterchen.netlify.com/)
+This README aims to walk you through the entire architecture of my [personal website](https://peterchen.herokuapp.com/)
 
 ## 🧐 What's inside?
 
@@ -39,7 +39,3 @@ A quick look at the top-level files and directories.
 - [x] Favicon
 - [x] Different titles in headers
 - [x] Resume
-
-## 💫 Deploy
-
-[![View on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://peterchen.netlify.com/)
