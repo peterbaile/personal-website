@@ -2,6 +2,7 @@
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
-body {
+html, body {
     font-family: 'Noto Sans', sans-serif;
+    height: 100%;
 }

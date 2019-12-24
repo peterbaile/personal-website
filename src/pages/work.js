@@ -6,12 +6,21 @@ import WorkPosts from '../components/WorkPosts';
 import SEO from '../components/seo';
 
 const WorkPage = () => (
-  <div>
+  <>
     <SEO title="Work & Projects" />
-    <Nav>
-      <WorkPosts />
-    </Nav>
-  </div>
+
+    <div className="container-fluid h-100">
+      <div className="row h-100">
+        <Nav />
+
+        <div className="col-md-7" style={{ marginTop: '5em' }}>
+          <div className="container">
+            <WorkPosts />
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
 )
 
 export default WorkPage

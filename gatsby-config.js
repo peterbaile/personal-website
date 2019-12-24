@@ -32,7 +32,7 @@ module.exports = {
         description: 'Personal Website of Peter Baile Chen',
         lang: 'en',
         start_url: '/',
-        icon: 'src/images/icon.png',
+        icon: 'static/images/icon.png',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

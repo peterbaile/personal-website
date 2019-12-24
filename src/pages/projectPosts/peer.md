@@ -3,7 +3,9 @@ path: "/work/peer"
 date: "January 2019 - Present"
 name: "Peer"
 description: "Co-Founder"
-image: "peer.jpg"
+image: "peer.png"
+color: "#ed8a82"
+size: "90%"
 ---
 __Brief Description:__
 

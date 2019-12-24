@@ -2,7 +2,7 @@
 path: "/about"
 image: "profile_picture.jpg"
 ---
-Hi, I am Peter, a sophomore studying [NETS](https://www.nets.upenn.edu/) at the University of Pennsylvania.
+Hi, I am Peter, a sophomore studying [NETS](https://www.nets.upenn.edu/) at the [University of Pennsylvania](https://www.upenn.edu/).
 
 I was born in Changzhou, China and lived in Shanghai for 14 years before my family moved to Hong Kong.
 

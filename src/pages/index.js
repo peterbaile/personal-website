@@ -3,63 +3,57 @@ import { Link } from 'gatsby'
 import Carousel from 'react-bootstrap/Carousel'
 
 // import components
-import SEO from '../components/seo';
+import SEO from '../components/seo'
+import Nav from '../components/Nav'
 
 const IndexPage = () => (
   <>
     <SEO />
 
-    <div className="text-center" style={{ marginTop: '1em' }}>
-      <h1 className="display-4">
-        Peter Baile Chen
-      </h1>
-    </div>
+    <div className="container-fluid h-100">
+      <div className="row">
+        <Nav />
 
-    <Carousel style={{ marginTop: '2em', marginBottom: '2em' }}>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/background_1.jpeg"
-          alt="Third slide"
-        />
+        <div className="col-md-7">
+          <Carousel style={{ marginTop: '3.5em' }}>
+            <Carousel.Item>
+              <img
+                className="img-fluid"
+                src="/images/background_1.jpg"
+                alt="Penn's Landing"
+              />
 
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
+              <Carousel.Caption>
+                <p>Penn&apos;s Landing</p>
+              </Carousel.Caption>
+            </Carousel.Item>
 
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/background_2.jpg"
-          alt="Third slide"
-        />
+            <Carousel.Item>
+              <img
+                className="img-fluid"
+                src="/images/background_2.jpg"
+                alt="Golden Gate Bridge"
+              />
 
-        <Carousel.Caption>
-          <h3>Picture shot at Harvey Cedars</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
+              <Carousel.Caption>
+                <p>Golden Gate Bridge</p>
+              </Carousel.Caption>
+            </Carousel.Item>
 
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/background_3.jpeg"
-          alt="Third slide"
-        />
+            <Carousel.Item>
+              <img
+                className="img-fluid"
+                src="/images/background_3.jpg"
+                alt="Harvey Cedars"
+              />
 
-        <Carousel.Caption>
-          <h3>Picture shot at Harvey Cedars</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-
-    <div className="text-center">
-      <Link to="/about/">
-        <button type="button" className="btn btn-outline-success">Explore the unusual mind of an engineer</button>
-      </Link>
+              <Carousel.Caption>
+                <p>Harvey Cedars</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </div>
+      </div>
     </div>
   </>
 )

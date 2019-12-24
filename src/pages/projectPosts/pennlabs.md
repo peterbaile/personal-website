@@ -3,7 +3,9 @@ path: "/work/pennlabs"
 date: "February 2019 - Present"
 name: "Penn Labs"
 description: "Web Developer"
-image: "pennLabs.png"
+image: "pennbasics.png"
+color: "#9bbff2"
+size: "100%"
 ---
 __Brief Description:__
 
