@@ -16,24 +16,48 @@ const Post = ({
   path,
   color,
   size,
-}) => (
-  <div className="d-flex justify-content-center" style={{ marginBottom: '1em' }}>
-    <StyledLink to={path}>
-      <div style={{ backgroundColor: color, borderRadius: '5px' }}>
-        <div className="row">
-          <div className="col-md-9">
-            <div className="text-center" style={{ padding: '1em' }}>
-              <img className="img-fluid" src={`/images/${image}`} alt={name} width={size} height={size} />
+  idx,
+}) => {
+  if (idx % 2 === 0) {
+    return (
+      <div className="d-flex justify-content-center" style={{ marginBottom: '1em' }}>
+        <StyledLink to={path}>
+          <div style={{ backgroundColor: color, borderRadius: '5px' }}>
+            <div className="row">
+              <div className="col-md-3" style={{ paddingTop: '1em' }}>
+                <h5 className="card-title bg-light" style={{ paddingLeft: '0.5em' }}>{name}</h5>
+              </div>
+              <div className="col-md-9">
+                <div className="text-center" style={{ padding: '1em' }}>
+                  <img className="img-fluid" src={`/images/${image}`} alt={name} width={size} height={size} />
+                </div>
+              </div>
             </div>
           </div>
-          <div className="col-md-3" style={{ paddingTop: '1em' }}>
-            <h5 className="card-title bg-light" style={{ paddingLeft: '0.5em' }}>{name}</h5>
+        </StyledLink>
+      </div>
+    )
+  }
+
+  return (
+    <div className="d-flex justify-content-center" style={{ marginBottom: '1em' }}>
+      <StyledLink to={path}>
+        <div style={{ backgroundColor: color, borderRadius: '5px' }}>
+          <div className="row">
+            <div className="col-md-9">
+              <div className="text-center" style={{ padding: '1em' }}>
+                <img className="img-fluid" src={`/images/${image}`} alt={name} width={size} height={size} />
+              </div>
+            </div>
+            <div className="col-md-3" style={{ paddingTop: '1em' }}>
+              <h5 className="card-title bg-light" style={{ paddingLeft: '0.5em' }}>{name}</h5>
+            </div>
           </div>
         </div>
-      </div>
-    </StyledLink>
-  </div>
-)
+      </StyledLink>
+    </div>
+  )
+}
 
 const WorkPosts = () => {
   const data = useStaticQuery(
@@ -65,7 +89,7 @@ const WorkPosts = () => {
   return (
     <div>
       {
-        posts.map(post => <Post {...post.node.childMarkdownRemark.frontmatter} />)
+        posts.map((post, idx) => <Post {...post.node.childMarkdownRemark.frontmatter} idx={idx} />)
       }
     </div>
   )
