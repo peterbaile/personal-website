@@ -5,7 +5,7 @@ name: "Peer"
 description: "Co-Founder"
 image: "peer.png"
 color: "#ed8a82"
-size: "90%"
+size: "75%"
 ---
 __Brief Description:__
 

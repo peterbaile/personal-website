@@ -18,4 +18,4 @@ __My Role:__
 - Front End Development of data analytics and machine learning algorithm for both the online portal and the mobile app
 - Production of promotional videos, pitchbooks, and web design
 
-![](https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/52412050_1155860867925346_7177797770831462400_n.png?_nc_cat=106&_nc_ht=scontent-iad3-1.xx&oh=849216cf9b11a3c2ca36d3007273ab43&oe=5D14EEF2)
+<img class="img-fluid" src="/images/pennLabs.png" />

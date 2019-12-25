@@ -24,11 +24,11 @@ const Post = ({
         <StyledLink to={path}>
           <div style={{ backgroundColor: color, borderRadius: '5px' }}>
             <div className="row">
-              <div className="col-md-3" style={{ paddingTop: '1em' }}>
-                <h5 className="card-title bg-light" style={{ paddingLeft: '0.5em' }}>{name}</h5>
+              <div className="col-md-3 text-center" style={{ paddingTop: '1em' }}>
+                <h5 className="card-title bg-light">{name}</h5>
               </div>
-              <div className="col-md-9">
-                <div className="text-center" style={{ padding: '1em' }}>
+              <div className="col-md-9 text-center">
+                <div style={{ padding: '1em 1em 0em 1em' }}>
                   <img className="img-fluid" src={`/images/${image}`} alt={name} width={size} height={size} />
                 </div>
               </div>
@@ -40,17 +40,17 @@ const Post = ({
   }
 
   return (
-    <div className="d-flex justify-content-center" style={{ marginBottom: '1em' }}>
+    <div style={{ marginBottom: '1em' }}>
       <StyledLink to={path}>
         <div style={{ backgroundColor: color, borderRadius: '5px' }}>
           <div className="row">
-            <div className="col-md-9">
-              <div className="text-center" style={{ padding: '1em' }}>
+            <div className="col-md-9 text-center">
+              <div style={{ padding: '1em 1em 0em 1em' }}>
                 <img className="img-fluid" src={`/images/${image}`} alt={name} width={size} height={size} />
               </div>
             </div>
-            <div className="col-md-3" style={{ paddingTop: '1em' }}>
-              <h5 className="card-title bg-light" style={{ paddingLeft: '0.5em' }}>{name}</h5>
+            <div className="col-md-3 text-center" style={{ paddingTop: '1em' }}>
+              <h5 className="card-title bg-light">{name}</h5>
             </div>
           </div>
         </div>

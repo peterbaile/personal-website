@@ -5,5 +5,5 @@ name: "Distributed Systems Lab"
 description: "Research Assistant"
 image: "dsl.png"
 color: "#edb88c"
-size: "50%"
+size: "45%"
 ---
