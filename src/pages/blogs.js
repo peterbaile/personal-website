@@ -5,9 +5,9 @@ import Nav from '../components/Nav';
 import WorkPosts from '../components/WorkPosts';
 import SEO from '../components/seo';
 
-const WorkPage = () => (
+const BlogPage = () => (
   <>
-    <SEO title="Work & Projects" />
+    <SEO title="Blogs" />
 
     <div className="container-fluid h-100">
       <div className="row h-100">
@@ -23,4 +23,4 @@ const WorkPage = () => (
   </>
 )
 
-export default WorkPage
+export default BlogPage

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Carousel from 'react-bootstrap/Carousel'
 
 // import components
@@ -14,8 +13,8 @@ const IndexPage = () => (
       <div className="row">
         <Nav />
 
-        <div className="col-md-7">
-          <Carousel style={{ marginTop: '3.5em' }}>
+        <div className="col-md-9">
+          <Carousel>
             <Carousel.Item>
               <img
                 className="img-fluid"

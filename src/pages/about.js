@@ -29,7 +29,7 @@ const AboutPage = () => {
         <div className="row h-100">
           <Nav />
 
-          <div className="col-md-7" style={{ marginTop: '5em' }}>
+          <div className="col-md-9" style={{ marginTop: '5em' }}>
             <div className="text-center" style={{ marginBottom: '3em' }}>
               <img src={`/images/${image}`} className="img-fluid" alt="profile" height="30%" width="30%" style={{ borderRadius: '50%' }} />
             </div>

@@ -2,20 +2,30 @@
 path: "/work/pennlabs"
 date: "February 2019 - Present"
 name: "Penn Labs"
-description: "Web Developer"
+description: "Full-stack Web Developer"
 image: "pennbasics.png"
 color: "#9bbff2"
 size: "100%"
 ---
-__Brief Description:__
+[Penn Basics GitHub Repo](https://github.com/pennlabs/pennbasics)
 
-[Penn Labs](https://pennlabs.org/) is a startup that aims to bring mentorship to every student through 
-- an online one-stop college application portal that saves time for counselors and thus increases the time for one-to-one coaching and
-- a P2P mobile app where student can view the analytics of past year applicants and get connected to a current college student for suggestion
 
-__My Role:__
+I entered [Penn Labs](https://pennlabs.org/) during the second semester of my freshman year and have been working on [Penn Basics](https://pennbasics.com/) since then. The website application aims to enrich students' lives by prodiving information on dining halls, laundry machines, and studyspaces.
 
-- Front End Development of data analytics and machine learning algorithm for both the online portal and the mobile app
-- Production of promotional videos, pitchbooks, and web design
+<br>
 
-<img class="img-fluid" src="/images/pennLabs.png" />
+**Innate Difficulty**
+
+There is an obvious difficulty that Basics has to overcome. We have a similar product called Penn Mobile on the mobile platform which has similar functionalities: see a list of dining halls, set reminders for laundry machines, and book studyrooms. has long been at the place before Basics and has an established audience group at Penn with a daily user more than 1k.
+
+<br>
+
+**Leadership**
+
+Initially, Cameron and I almost did all the work. But 
+
+<br>
+
+**Looking Forward**
+
+By incorporating new features

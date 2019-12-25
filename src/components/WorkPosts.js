@@ -20,7 +20,7 @@ const Post = ({
 }) => {
   if (idx % 2 === 0) {
     return (
-      <div className="d-flex justify-content-center" style={{ marginBottom: '1em' }}>
+      <div style={{ marginBottom: '1em' }}>
         <StyledLink to={path}>
           <div style={{ backgroundColor: color, borderRadius: '5px' }}>
             <div className="row">

@@ -21,7 +21,7 @@ const WorkPostTemp = ({ data }) => {
     <div className="container-fluid h-100">
       <div className="row h-100">
         <Nav />
-        <div className="col-md-7">
+        <div className="col-md-9">
           <div style={{ marginTop: '3em' }}>
             <StickyContainer>
               <Sticky>

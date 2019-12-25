@@ -1,8 +1,8 @@
 @import "https://use.fontawesome.com/releases/v5.7.2/css/all.css";
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
 html, body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'EB Garamond', serif;
     height: 100%;
 }
