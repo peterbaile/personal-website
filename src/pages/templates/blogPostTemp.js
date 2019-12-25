@@ -27,7 +27,7 @@ const WorkPostTemp = ({ data }) => {
               <Sticky>
                 {({ style }) => (
                   <div style={{ ...style, backgroundColor: 'white', padding: '1em 0em 1.5em 0em', fontSize: '24px' }}>
-                    <StyledLink to="/work">
+                    <StyledLink to="/blogs">
                       <i className="fas fa-angle-double-left" />
                     </StyledLink>
                     &nbsp;&nbsp;{post.frontmatter.name}
@@ -44,7 +44,7 @@ const WorkPostTemp = ({ data }) => {
 }
 
 export const postQuery = graphql`
-query fetchSingleWork($path: String!) {
+query fetchSingleBlog($path: String!) {
     markdownRemark(frontmatter: {path: {eq: $path}}) {
       frontmatter {
         path

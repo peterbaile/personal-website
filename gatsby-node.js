@@ -8,41 +8,48 @@
 
 const path = require('path')
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = async ({ actions, graphql }) => {
+  const { createPage } = actions
 
-  const workPostTemplate = path.resolve('src/pages/templates/workPostTemp.js');
-
-  return graphql(`
-  {
-    allFile(filter:{sourceInstanceName:{eq:"workPosts"}}){
-      edges{
-        node{
-          sourceInstanceName
-          childMarkdownRemark{
-            frontmatter{
-              name
+  let res = await graphql(`
+    query {
+      allMarkdownRemark(filter: {frontmatter: {path: {regex: "/work/"}}}) {
+        edges {
+          node {
+            frontmatter {
               path
-              date
-              description
-              image
             }
-            html
           }
         }
       }
     }
-  }
-  `).then(res => {
-    if (res.errors) {
-      return Promise.reject(res.errors)
-    }
+  `)
 
-    res.data.allFile.edges.forEach(({ node }) => {
-      createPage({
-        path: node.childMarkdownRemark.frontmatter.path,
-        component: workPostTemplate,
-      })
+  res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: path.resolve('src/pages/templates/workPostTemp.js'),
+    })
+  })
+
+  res = await graphql(`
+    query {
+      allMarkdownRemark(filter: {frontmatter: {path: {regex: "/blogs/"}}}) {
+        edges {
+          node {
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: path.resolve('src/pages/templates/blogPostTemp.js'),
     })
   })
 }

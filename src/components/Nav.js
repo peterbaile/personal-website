@@ -59,7 +59,7 @@ const MyNavBar = () => (
     </LaptopDiv>
     <MobileDiv className="col-md-3">
       <Navbar collapseOnSelect expand="lg">
-        <Navbar.Brand href="#home">Peter Baile Chen</Navbar.Brand>
+        <Navbar.Brand href="/">Peter Baile Chen</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">

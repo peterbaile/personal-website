@@ -1,9 +1,9 @@
 import React from 'react'
 
 // import components
-import Nav from '../components/Nav';
-import WorkPosts from '../components/WorkPosts';
-import SEO from '../components/seo';
+import Nav from '../components/Nav'
+import BlogPosts from '../components/BlogPosts'
+import SEO from '../components/seo'
 
 const BlogPage = () => (
   <>
@@ -15,7 +15,7 @@ const BlogPage = () => (
 
         <div className="col-md-9" style={{ marginTop: '5em' }}>
           <div className="container">
-            <WorkPosts />
+            <BlogPosts />
           </div>
         </div>
       </div>
