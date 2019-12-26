@@ -32,8 +32,10 @@ const MyNavBar = () => (
   <>
     <LaptopDiv className="col-md-3" style={{ paddingLeft: '3em', marginTop: '2em' }}>
       <div className="position-fixed text-center">
-        <p className="h3" style={{ marginBottom: '1em' }}> Peter Baile Chen </p>
-        <Link to="/" className="no-color"> Home </Link>
+        <Link to="/" className="no-color no-dec">
+          <p className="h3" style={{ marginBottom: '1em' }}> Peter Baile Chen </p>
+        </Link>
+        <Link to="/" className="no-color"> Gallery </Link>
         <br />
         <Link to="/about" className="no-color">About Me</Link>
         <br />
@@ -59,7 +61,7 @@ const MyNavBar = () => (
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/">Gallery</Nav.Link>
             <Nav.Link href="/about">About Me</Nav.Link>
             <Nav.Link href="/work">Work</Nav.Link>
             <Nav.Link href="/blogs">Blogs</Nav.Link>
