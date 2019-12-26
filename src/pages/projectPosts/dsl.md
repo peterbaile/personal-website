@@ -1,6 +1,6 @@
 ---
 path: "/work/dsl"
-date: "June 2019 - Present"
+startDate: "2019-06-01"
 name: "Distributed Systems Lab"
 description: "Research Assistant"
 image: "dsl.png"

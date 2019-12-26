@@ -1,8 +1,8 @@
 @import "https://use.fontawesome.com/releases/v5.7.2/css/all.css";
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 
 html, body {
-    font-family: 'EB Garamond', serif;
+    font-family: 'PT Serif', serif;
     height: 100%;
 }

@@ -21,17 +21,15 @@ const Post = ({
   path,
   title,
   created,
-}) => {
-  return (
-    <div style={{ marginBottom: '1em' }}>
-      <StyledLink to={path}>
-        <h3> {title} </h3>
-        <p className="text-muted"> {created} </p>
-      </StyledLink>
-      <Line />
-    </div>
-  )
-}
+}) => (
+  <div style={{ marginBottom: '1em' }}>
+    <StyledLink to={path}>
+      <h3> {title} </h3>
+      <p className="text-muted"> {created} </p>
+    </StyledLink>
+    <Line />
+  </div>
+)
 
 const BlogPosts = () => {
   const data = useStaticQuery(

@@ -48,7 +48,6 @@ query fetchSingleWork($path: String!) {
     markdownRemark(frontmatter: {path: {eq: $path}}) {
       frontmatter {
         path
-        date
         name
         description
         image

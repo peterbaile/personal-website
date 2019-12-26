@@ -30,7 +30,7 @@ const WorkPostTemp = ({ data }) => {
                     <StyledLink to="/blogs">
                       <i className="fas fa-angle-double-left" />
                     </StyledLink>
-                    &nbsp;&nbsp;{post.frontmatter.name}
+                    &nbsp;&nbsp;{post.frontmatter.title}
                   </div>
                 )}
               </Sticky>
@@ -48,10 +48,10 @@ query fetchSingleBlog($path: String!) {
     markdownRemark(frontmatter: {path: {eq: $path}}) {
       frontmatter {
         path
-        date
         name
         description
         image
+        title
       }
       html
     }

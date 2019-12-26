@@ -1,6 +1,7 @@
 ---
 path: "/work/peer"
-date: "January 2019 - Present"
+startDate: "2019-01"
+endDate: "2019-04"
 name: "Peer"
 description: "Co-Founder"
 image: "peer.png"

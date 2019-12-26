@@ -1,6 +1,6 @@
 ---
 path: "/work/pennlabs"
-date: "February 2019 - Present"
+startDate: "2019-02"
 name: "Penn Labs"
 description: "Full-stack Web Developer"
 image: "pennbasics.png"

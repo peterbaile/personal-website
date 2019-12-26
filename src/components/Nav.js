@@ -34,7 +34,7 @@ const LaptopDiv = s.div`
 
 const MyNavBar = () => (
   <>
-    <LaptopDiv className="col-md-3" style={{ paddingLeft: '5em' }}>
+    <LaptopDiv className="col-md-3" style={{ paddingLeft: '3em', marginTop: '2em' }}>
       <div className="position-fixed text-center">
         <p className="h3" style={{ marginBottom: '1em' }}> Peter Baile Chen </p>
         <StyledLink to="/"> Home </StyledLink>
