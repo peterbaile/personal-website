@@ -29,14 +29,11 @@ const AboutPage = () => {
         <div className="row h-100">
           <Nav />
 
-          <div className="col-md-9" style={{ marginTop: '5em' }}>
+          <div className="col-md-9" style={{ marginTop: '5em', marginBottom: '2em' }}>
             <div className="text-center" style={{ marginBottom: '3em' }}>
               <img src={`/images/${image}`} className="img-fluid" alt="profile" height="30%" width="30%" style={{ borderRadius: '50%' }} />
             </div>
             <p dangerouslySetInnerHTML={{ __html: content }} />
-            <p>
-              <blockquote className="blockquote"> Stay Hungry, Stay Foolish </blockquote>
-            </p>
             <a className="btn btn-outline-info" href="/files/resume.pdf" target="_blank"> View Resume </a>
           </div>
         </div>
