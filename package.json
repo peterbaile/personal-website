@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Peter Chen",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.1.19",
     "gatsby-image": "^2.0.30",
@@ -13,6 +14,7 @@
     "gatsby-plugin-offline": "^2.0.24",
     "gatsby-plugin-react-helmet": "^3.0.7",
     "gatsby-plugin-sharp": "^2.0.23",
+    "gatsby-plugin-styled-components": "^3.1.16",
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-remark": "^2.3.0",
     "gatsby-transformer-sharp": "^2.1.15",
@@ -27,7 +29,7 @@
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
     "react-sticky": "^6.0.3",
-    "styled-components": "^4.4.0"
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "eslint": "^6.4.0",
@@ -36,8 +38,8 @@
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-standard": "^4.0.1",
