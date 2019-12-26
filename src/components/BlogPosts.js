@@ -3,11 +3,6 @@ import { graphql, useStaticQuery, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import s from 'styled-components'
 
-const StyledLink = s(Link)`
-  color: black !important;
-  text-decoration: none !important;
-`
-
 const Line = s.div`
   width: 100%;
   display: block;
@@ -23,10 +18,10 @@ const Post = ({
   created,
 }) => (
   <div style={{ marginBottom: '1em' }}>
-    <StyledLink to={path}>
+    <Link to={path} className="no-color no-dec">
       <h3> {title} </h3>
       <p className="text-muted"> {created} </p>
-    </StyledLink>
+    </Link>
     <Line />
   </div>
 )

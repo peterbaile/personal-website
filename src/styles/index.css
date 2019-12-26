@@ -6,3 +6,11 @@ html, body {
     font-family: 'PT Serif', serif;
     height: 100%;
 }
+
+a.no-dec {
+    text-decoration: none !important;
+}
+
+a.no-color {
+    color: black !important;
+}

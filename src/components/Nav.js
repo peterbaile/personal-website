@@ -14,10 +14,6 @@ const FooterLink = s.a`
   }
 `
 
-const StyledLink = s(Link)`
-  color: black !important;
-`
-
 const MobileDiv = s.div`
   @media screen and (min-width: 768px) {
     display: none;
@@ -37,13 +33,13 @@ const MyNavBar = () => (
     <LaptopDiv className="col-md-3" style={{ paddingLeft: '3em', marginTop: '2em' }}>
       <div className="position-fixed text-center">
         <p className="h3" style={{ marginBottom: '1em' }}> Peter Baile Chen </p>
-        <StyledLink to="/"> Home </StyledLink>
+        <Link to="/" className="no-color"> Home </Link>
         <br />
-        <StyledLink to="/about">About Me</StyledLink>
+        <Link to="/about" className="no-color">About Me</Link>
         <br />
-        <StyledLink to="/work">Work</StyledLink>
+        <Link to="/work" className="no-color">Work</Link>
         <br />
-        <StyledLink to="/blogs">Blogs</StyledLink>
+        <Link to="/blogs" className="no-color">Blogs</Link>
         <div style={{ marginTop: '1em' }}>
           <FooterLink href="https://github.com/peterbaile" target="_blank">
             <i className="fab fa-github" />

@@ -1,13 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import s from 'styled-components'
 import moment from 'moment'
-
-const StyledLink = s(Link)`
-  color: black !important;
-  text-decoration: none !important;
-`
 
 const Post = ({
   image,
@@ -21,7 +15,7 @@ const Post = ({
   if (idx % 2 === 0) {
     return (
       <div style={{ marginBottom: '1em' }}>
-        <StyledLink to={path}>
+        <Link to={path} className="no-dec no-color">
           <div style={{ backgroundColor: color, borderRadius: '5px' }}>
             <div className="row">
               <div className="col-md-3 text-center" style={{ marginTop: '1em' }}>
@@ -34,14 +28,14 @@ const Post = ({
               </div>
             </div>
           </div>
-        </StyledLink>
+        </Link>
       </div>
     )
   }
 
   return (
     <div style={{ marginBottom: '1em' }}>
-      <StyledLink to={path}>
+      <Link to={path} className="no-dec no-color">
         <div style={{ backgroundColor: color, borderRadius: '5px' }}>
           <div className="row">
             <div className="col-md-9 text-center">
@@ -54,7 +48,7 @@ const Post = ({
             </div>
           </div>
         </div>
-      </StyledLink>
+      </Link>
     </div>
   )
 }

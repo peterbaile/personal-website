@@ -1,14 +1,8 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { Sticky, StickyContainer } from 'react-sticky'
-import s from 'styled-components'
 
 import Nav from '../../components/Nav'
-
-const StyledLink = s(Link)`
-  color: black !important;
-  text-decoration: none !important;
-`
 
 const WorkPostTemp = ({ data }) => {
   const { markdownRemark: post } = data
@@ -27,9 +21,9 @@ const WorkPostTemp = ({ data }) => {
               <Sticky>
                 {({ style }) => (
                   <div style={{ ...style, backgroundColor: 'white', padding: '1em 0em 1.5em 0em', fontSize: '24px' }}>
-                    <StyledLink to="/blogs">
+                    <Link to="/blogs" className="no-color no-dec">
                       <i className="fas fa-angle-double-left" />
-                    </StyledLink>
+                    </Link>
                     &nbsp;&nbsp;{post.frontmatter.title}
                   </div>
                 )}
