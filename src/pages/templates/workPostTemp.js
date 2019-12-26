@@ -28,7 +28,7 @@ const WorkPostTemp = ({ data }) => {
                   </div>
                 )}
               </Sticky>
-              <p dangerouslySetInnerHTML={{ __html: post.html }} />
+              <p className="body-content" dangerouslySetInnerHTML={{ __html: post.html }} />
             </StickyContainer>
           </div>
         </div>

@@ -1,6 +1,7 @@
 @import "https://use.fontawesome.com/releases/v5.7.2/css/all.css";
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 html, body {
     font-family: 'PT Serif', serif;
@@ -13,4 +14,8 @@ a.no-dec {
 
 a.no-color {
     color: black !important;
+}
+
+.body-content {
+    font-family: 'Open Sans', sans-serif;
 }
