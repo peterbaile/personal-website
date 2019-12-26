@@ -37,7 +37,7 @@ const MyNavBar = () => (
         </Link>
         <Link to="/" className="no-color"> Gallery </Link>
         <br />
-        <Link to="/about" className="no-color">About Me</Link>
+        <Link to="/about" className="no-color">About</Link>
         <br />
         <Link to="/work" className="no-color">Work</Link>
         <br />
@@ -62,7 +62,7 @@ const MyNavBar = () => (
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Gallery</Nav.Link>
-            <Nav.Link href="/about">About Me</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/work">Work</Nav.Link>
             <Nav.Link href="/blogs">Blogs</Nav.Link>
             <Nav.Link>
