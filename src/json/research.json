@@ -1,0 +1,23 @@
+{
+  "paper": [
+    {
+      "title": "Fault-tolerant and Transactional Stateful Serverless Workflows",
+      "authors": "Haoran Zhang, Adney Cardoza, Peter Baile Chen, Sebastian Angel, Vincent Liu",
+      "conference": "OSDI 2020",
+      "links": {
+        "Paper": "https://www.usenix.org/system/files/osdi20-zhang_haoran.pdf"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "head": "JUpyter Notebook with Enhanced Access and Understanding (JUNEAU)",
+      "desc": [
+        "Juneau is a system of holistic data management tools which can find, standardize, and benefit from the existing resources in the data lake",
+        "Initiated the use of Locality-sensitive hashing Ensemble (LSHE) for similarity comparisons among categorical data and two-sample KS tests among numerical data",
+        "Introduced similarity search among hierarchical data, achieved through converting data to relational views, followed by the usage of multi-way top-k query and schema mapping"
+      ],
+      "links": {"Code": "https://github.com/juneau-project/juneau" }
+    }
+  ]
+}
