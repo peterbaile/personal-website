@@ -1,57 +1,61 @@
-[
-  {
-    "pos": "Director of Tech Department",
-    "name": "The Daily Pennsylvanian",
-    "head": "Director of Tech Department, The Daily Pennsylvanian",
-    "website": "https://developers.thedp.com/",
-    "img": "dp-logo.png",
-    "time": "Jan 2020-Feb 2021",
-    "desc": [
-      "Led a team of 4 to build the first iOS & Android mobile app: DP+",
-      "Migrated project pages from primitive HTML to modern web frameworks GatsbyJS & NextJS",
-      "Co-founded the Tech Department which aims to build a better developer environment"
-    ],
-    "links": [{ "DP+": "https://apps.apple.com/tt/app/dp/id1550818171" }]
-  },
-  {
-    "head": "Full-stack Web Engineer, Penn Labs",
-    "website": "https://pennlabs.org/",
-    "img": "penn-labs.png",
-    "time": "Feb 2019-Dec 2020",
-    "desc": []
-  },
-  {
-    "head": "Instructor, CIS 197: Javascript",
-    "website": "https://www.seas.upenn.edu/~cis197/",
-    "img": "197-logo.png",
-    "time": "Sep 2020 - Present",
-    "desc": [
-      "Best-rated instructor as of Spring '21",
-      "Teach classes of 25 students",
-      "Created lectures on GatsbyJS and NextJS"
-    ]
-  },
-  {
-    "head": "TA, CIS 455/555: Internet and Web Systems",
-    "website": "https://www.cis.upenn.edu/~cis455/",
-    "subhead": "",
-    "img": "penn-logo.png",
-    "time": "Sep 2021 - Present",
-    "desc": []
-  },
-  {
-    "head": "TA, NETS 212: Scalable and Cloud Computing",
-    "link": "https://nets212.seas.upenn.edu/",
-    "img": "penn-logo.png",
-    "time": "Sep 2020 - Dec 2020",
-    "desc": ["Graded homework, held weekly office hours"]
-  },
-  {
-    "head": "TA, CIS 320: Introduction to Algorithms",
-    "website": "https://www.seas.upenn.edu/~cis320/",
-    "subhead": "",
-    "img": "penn-logo.png",
-    "time": "May 2020 - Aug 2020",
-    "desc": ["Graded homework, held weekly office hours"]
-  }
-]
+{
+  "clubs": [
+    {
+      "pos": "Director of Tech Department",
+      "name": "The Daily Pennsylvanian",
+      "head": "Director of Tech Department, The Daily Pennsylvanian",
+      "website": "https://developers.thedp.com/",
+      "img": "dp-logo.png",
+      "time": "Jan 2020-Feb 2021",
+      "desc": [
+        "Led a team of 4 to build the first iOS & Android mobile app: DP+",
+        "Migrated project pages from primitive HTML to modern web frameworks GatsbyJS & NextJS",
+        "Co-founded the Tech Department which aims to build a better developer environment"
+      ],
+      "links": [{ "DP+": "https://apps.apple.com/tt/app/dp/id1550818171" }]
+    },
+    {
+      "head": "Full-stack Web Developer, Penn Labs",
+      "website": "https://pennlabs.org/",
+      "img": "penn-labs.png",
+      "time": "Feb 2019-Dec 2020",
+      "desc": ["Utilized university authentication, dining and laundry APIs to build Penn Basics"]
+    }
+  ],
+  "teaching": [
+    {
+      "head": "Instructor, CIS 197: Javascript",
+      "website": "https://www.seas.upenn.edu/~cis197/",
+      "img": "197-logo.png",
+      "time": "Sep 2020 - Present",
+      "desc": [
+        "Best-rated instructor as of Spring '21",
+        "Teach classes of 25 students",
+        "Created lectures on GatsbyJS and NextJS"
+      ]
+    },
+    {
+      "head": "TA, CIS 455/555: Internet and Web Systems",
+      "website": "https://www.cis.upenn.edu/~cis455/",
+      "subhead": "",
+      "img": "penn-logo.png",
+      "time": "Sep 2021 - Present",
+      "desc": []
+    },
+    {
+      "head": "TA, NETS 212: Scalable and Cloud Computing",
+      "link": "https://nets212.seas.upenn.edu/",
+      "img": "penn-logo.png",
+      "time": "Sep 2020 - Dec 2020",
+      "desc": ["Graded homework, held weekly office hours"]
+    },
+    {
+      "head": "TA, CIS 320: Introduction to Algorithms",
+      "website": "https://www.seas.upenn.edu/~cis320/",
+      "subhead": "",
+      "img": "penn-logo.png",
+      "time": "May 2020 - Aug 2020",
+      "desc": ["Graded homework, held weekly office hours"]
+    }
+  ]
+}

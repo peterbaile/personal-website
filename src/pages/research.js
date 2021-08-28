@@ -8,32 +8,29 @@ import ResearchJSON from '../json/research.json'
 const { paper, projects } = ResearchJSON
 
 const Paper = ({ title, authors, conference, links }) => (
-  <>
-    <p style={{ fontSize: '1.2rem' }}>
-      <b> {title} </b>
+  <li>
+    <p style={{ fontSize: '1.2rem', margin: '0'}}>
+      <em> {title} </em> | {conference}
     </p>
-    <p style={{ fontSize: '0.9rem' }}>
-      <em> {conference} </em>
-    </p>
-    <p style={{ fontSize: '0.9rem' }}> {authors} </p>
+    <p style={{ fontSize: '0.9rem', margin: '0' }}> {authors} </p>
     {Object.keys(links).map(k => (
-      <a href={`${links[k]}`}> [{k}] </a>
+      <a href={`${links[k]}`}> [ {k} ] </a>
     ))}
-  </>
+  </li>
 )
 
 const Project = ({ head, desc, links }) => (
   <div style={{ marginBottom: '1.5rem' }}>
-    <b style={{ fontSize: '1.2rem' }}> {head} </b>
+    <em style={{ fontSize: '1.2rem' }}> {head} </em>
     {Boolean(desc.length) && (
-      <ul>
+      <ul style={{ marginBottom: '0' }}>
         {desc.map(e => (
-          <li> {e} </li>
+          <li style={{ fontWeight: '300' }}> {e} </li>
         ))}
       </ul>
     )}
     {Object.keys(links).map(k => (
-      <a href={`${links[k]}`}> [{k}] </a>
+      <a href={`${links[k]}`}> [ {k} ] </a>
     ))}
   </div>
 )
@@ -46,15 +43,17 @@ const Research = () => (
         <Nav />
 
         <div
-          className="col-md-9"
-          style={{ marginTop: '5em', padding: '0 5rem' }}
+          className="col-md-9 body-content"
+          style={{ marginTop: '4em', padding: '0 5rem' }}
         >
-          Paper
+          <p style={{ fontSize: '2rem', fontWeight: '800', marginBottom: '0.5rem' }}>paper</p>
+          <ul>
           {paper.map(e => (
             <Paper {...e} />
           ))}
-          <div style={{ margin: '3rem 0' }} />
-          <h2> Projects </h2>
+          </ul>
+          <div style={{ margin: '4rem 0' }} />
+          <p style={{ fontSize: '2rem', fontWeight: '800', marginBottom: '0.5rem' }}>projects</p>
           {projects.map(e => (
             <Project {...e} />
           ))}

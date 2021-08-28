@@ -34,7 +34,7 @@ const AboutPage = () => {
           <div
             className="col-md-9 body-content"
             style={{
-              marginTop: '5em',
+              marginTop: '4em',
               marginBottom: '2em',
               padding: '0em 3em',
             }}

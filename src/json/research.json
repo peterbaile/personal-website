@@ -13,11 +13,11 @@
     {
       "head": "JUpyter Notebook with Enhanced Access and Understanding (JUNEAU)",
       "desc": [
-        "Juneau is a system of holistic data management tools which can find, standardize, and benefit from the existing resources in the data lake",
+        "JUNEAU is a system of holistic data management tools which can find, standardize, and benefit from the existing resources in the data lake",
         "Initiated the use of Locality-sensitive hashing Ensemble (LSHE) for similarity comparisons among categorical data and two-sample KS tests among numerical data",
-        "Introduced similarity search among hierarchical data, achieved through converting data to relational views, followed by the usage of multi-way top-k query and schema mapping"
+        "Introduced similarity search among hierarchical data, achieved through converting hierarchical data to relational views, followed by the usage of multi-way top-k query and schema mapping"
       ],
-      "links": {"Code": "https://github.com/juneau-project/juneau" }
+      "links": { "Code": "https://github.com/juneau-project/juneau" }
     }
   ]
 }
