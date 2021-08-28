@@ -3,7 +3,7 @@
   "private": true,
   "description": "Personal Website for Peter Baile Chen",
   "version": "0.1.0",
-  "author": "Peter Chen",
+  "author": "@peterbaile",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "bootstrap": "^4.3.1",
@@ -18,6 +18,7 @@
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-remark": "^2.3.0",
     "gatsby-transformer-sharp": "^2.1.15",
+    "gh-pages": "^3.2.3",
     "moment": "^2.24.0",
     "net": "^1.0.2",
     "node": "10.15.2",
@@ -57,7 +58,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "git push heroku master"
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "repository": {
     "type": "git",
