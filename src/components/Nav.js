@@ -28,31 +28,72 @@ const LaptopDiv = s.div`
   }
 `
 
+const MenuLink = s(Link)`
+  font-size: 1.1em;
+
+  p {
+    margin-bottom: 0.6rem;
+  }
+`
+
+const Line = s.div`
+  border-bottom: 1px solid #000;
+  width: 70%;
+  margin: auto;
+`
+
 const MyNavBar = () => (
   <>
-    <LaptopDiv className="col-md-3" style={{ paddingLeft: '3em', marginTop: '2em' }}>
-      <div className="position-fixed text-center">
-        <Link to="/" className="no-color no-dec">
-          <p className="h3" style={{ marginBottom: '1em' }}> Peter Baile Chen </p>
-        </Link>
-        <Link to="/" className="no-color"> Gallery </Link>
-        <br />
-        <Link to="/about" className="no-color">About</Link>
-        <br />
-        <Link to="/work" className="no-color">Work</Link>
-        <br />
-        <Link to="/blogs" className="no-color">Blogs</Link>
-        <div style={{ marginTop: '1em' }}>
+    <LaptopDiv
+      className="col-md-3"
+      style={{ paddingLeft: '3em', marginTop: '4em' }}
+    >
+      <div className="position-fixed">
+        <h2 style={{ marginBottom: '0.5em' }}>Peter Baile Chen</h2>
+        <Line />
+        <div style={{ marginTop: '3rem', textAlign: 'center' }}>
+          <MenuLink to="/" className="no-color">
+            <p> ABOUT </p>
+          </MenuLink>
+          <MenuLink to="/research" className="no-color">
+            <p> RESEARCH </p>
+          </MenuLink>
+          <MenuLink to="/professional" className="no-color">
+            <p> PROFESSIONAL </p>
+          </MenuLink>
+          {/* <MenuLink to="/blogs" className="no-color">
+            <p>BLOG</p>
+          </MenuLink> */}
+        </div>
+        <div
+          style={{
+            bottom: '30px',
+            left: '35px',
+            position: 'fixed',
+            padding: '0',
+            margin: '0',
+            fontSize: '0.7em',
+          }}
+        >
           <FooterLink href="https://github.com/peterbaile" target="_blank">
             <i className="fab fa-github" />
           </FooterLink>
-          <FooterLink href="https://www.linkedin.com/in/peter-chen-ba7847153/" target="_blank">
+          <FooterLink
+            href="https://www.linkedin.com/in/peter-bc/"
+            target="_blank"
+          >
             <i className="fab fa-linkedin" />
           </FooterLink>
-          <FooterLink href="mailto: cbaile@seas.upenn.edu">
+          <FooterLink href="mailto:cbaile@seas.upenn.edu">
             <i className="fas fa-envelope" />
           </FooterLink>
+          <br />
+          <br />
+          &copy; 2021 Peter Baile Chen
+          <br />
+          Last update: 8/28/2021
         </div>
+        {/* <div> Copyright 2021 Peter Baile Chen. Last update: 8/28/2021. </div> */}
       </div>
     </LaptopDiv>
     <MobileDiv className="col-md-3">
@@ -66,9 +107,15 @@ const MyNavBar = () => (
             <Nav.Link href="/work">Work</Nav.Link>
             <Nav.Link href="/blogs">Blogs</Nav.Link>
             <Nav.Link>
-              <FooterLink href="https://github.com/peterbaile"> <i className="fab fa-github" /> </FooterLink>
-              <FooterLink href="https://www.linkedin.com/in/peter-chen-ba7847153/"> <i className="fab fa-linkedin" /> </FooterLink>
-              <FooterLink href="mailto: cbaile@seas.upenn.edu"> <i className="fas fa-envelope" /> </FooterLink>
+              <FooterLink href="https://github.com/peterbaile">
+                <i className="fab fa-github" />
+              </FooterLink>
+              <FooterLink href="https://www.linkedin.com/in/peter-chen-ba7847153/">
+                <i className="fab fa-linkedin" />
+              </FooterLink>
+              <FooterLink href="mailto: cbaile@seas.upenn.edu">
+                <i className="fas fa-envelope" />
+              </FooterLink>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

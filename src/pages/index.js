@@ -1,60 +1,73 @@
 import React from 'react'
-import Carousel from 'react-bootstrap/Carousel'
+import { useStaticQuery, graphql } from 'gatsby'
 
 // import components
-import SEO from '../components/seo'
 import Nav from '../components/Nav'
+import SEO from '../components/seo'
 
-const IndexPage = () => (
-  <>
-    <SEO />
+const AboutPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      markdownRemark(frontmatter: { path: { eq: "/about" } }) {
+        id
+        frontmatter {
+          path
+          image
+        }
+        html
+      }
+    }
+  `)
 
-    <div className="container-fluid h-100">
-      <div className="row">
-        <Nav />
+  const { markdownRemark: aboutPost } = data
+  const { html: content } = aboutPost
+  const {
+    frontmatter: { image },
+  } = aboutPost
+  return (
+    <>
+      <SEO title="About" />
+      <div className="container-fluid h-100">
+        <div className="row h-100">
+          <Nav />
 
-        <div className="col-md-9">
-          <Carousel>
-            <Carousel.Item>
+          <div
+            className="col-md-9 body-content"
+            style={{
+              marginTop: '5em',
+              marginBottom: '2em',
+              padding: '0em 3em',
+            }}
+          >
+            <div className="text-center" style={{ marginBottom: '3em' }}>
               <img
+                src={`/images/${image}`}
                 className="img-fluid"
-                src="/images/background_1.jpg"
-                alt="Penn's Landing"
+                alt="profile"
+                height="30%"
+                width="30%"
+                style={{ borderRadius: '50%' }}
               />
-
-              <Carousel.Caption>
-                <p>Penn&apos;s Landing</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item>
-              <img
-                className="img-fluid"
-                src="/images/background_2.jpg"
-                alt="Golden Gate Bridge"
+            </div>
+            <div style={{ padding: '0 5em' }}>
+              <p
+                className="text-justify"
+                dangerouslySetInnerHTML={{ __html: content }}
+                style={{ marginBottom: '2em' }}
               />
-
-              <Carousel.Caption>
-                <p>Golden Gate Bridge</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item>
-              <img
-                className="img-fluid"
-                src="/images/background_3.jpg"
-                alt="Harvey Cedars"
-              />
-
-              <Carousel.Caption>
-                <p>Harvey Cedars</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
+              {/* <a
+                className="btn btn-outline-info"
+                href="/files/resume.pdf"
+                target="_blank"
+              >
+                View My Resume &#8594;
+              </a> */}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </>
-)
+    </>
+  )
+}
 
-export default IndexPage
+export default AboutPage

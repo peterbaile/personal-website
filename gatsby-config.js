@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Personal Website',
+    title: 'Peter Baile Chen',
     description: 'Personal Website for Peter Baile Chen',
     author: 'Peter Chen',
   },
@@ -37,9 +37,9 @@ module.exports = {
       options: {
         name: 'Peter Baile Chen',
         short_name: 'Peter Chen',
+        start_url: '/',
         description: 'Personal Website of Peter Baile Chen',
         lang: 'en',
-        start_url: '/',
         icon: 'static/images/icon.png',
       },
     },
