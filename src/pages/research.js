@@ -1,9 +1,20 @@
 import React from 'react'
+import s from 'styled-components'
 
 import Nav from '../components/Nav'
 import SEO from '../components/seo'
 
 import ResearchJSON from '../json/research.json'
+
+const Wrapper = s.div`
+  margin-top: 4em;
+  padding: 0em 5rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 2em;
+    margin-top: 2em;
+  }
+`
 
 const { paper, projects } = ResearchJSON
 
@@ -42,10 +53,7 @@ const Research = () => (
       <div className="row h-100">
         <Nav />
 
-        <div
-          className="col-md-9 body-content"
-          style={{ marginTop: '4em', padding: '0 5rem' }}
-        >
+        <Wrapper className="col-md-9 body-content">
           <p style={{ fontSize: '2rem', fontWeight: '800', marginBottom: '0.5rem' }}>paper</p>
           <ul>
           {paper.map(e => (
@@ -57,7 +65,7 @@ const Research = () => (
           {projects.map(e => (
             <Project {...e} />
           ))}
-        </div>
+        </Wrapper>
       </div>
     </div>
   </>

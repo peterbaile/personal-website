@@ -1,9 +1,21 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import s from 'styled-components'
 
 // import components
 import Nav from '../components/Nav'
 import SEO from '../components/seo'
+
+const Wrapper = s.div`
+  margin-top: 4em;
+  margin-bottom: 2em;
+  padding: 0em 8em;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 2em;
+    margin-bottom: 0;
+  }
+`
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -31,14 +43,7 @@ const AboutPage = () => {
         <div className="row h-100">
           <Nav />
 
-          <div
-            className="col-md-9 body-content"
-            style={{
-              marginTop: '4em',
-              marginBottom: '2em',
-              padding: '0em 3em',
-            }}
-          >
+          <Wrapper className="col-md-9 body-content">
             <div className="text-center" style={{ marginBottom: '3em' }}>
               <img
                 src={`/images/${image}`}
@@ -49,7 +54,7 @@ const AboutPage = () => {
                 style={{ borderRadius: '50%' }}
               />
             </div>
-            <div style={{ padding: '0 5em' }}>
+            <div>
               <p
                 className="text-justify"
                 dangerouslySetInnerHTML={{ __html: content }}
@@ -63,7 +68,7 @@ const AboutPage = () => {
                 View My Resume &#8594;
               </a> */}
             </div>
-          </div>
+          </Wrapper>
         </div>
       </div>
     </>

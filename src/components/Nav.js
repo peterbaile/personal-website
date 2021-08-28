@@ -19,7 +19,7 @@ const MobileDiv = s.div`
     display: none;
   }
 
-  margin-bottom: 1em;
+  margin: 1em 0;
 `
 
 const LaptopDiv = s.div`
@@ -99,13 +99,15 @@ const MyNavBar = () => (
     <MobileDiv className="col-md-3">
       <Navbar collapseOnSelect expand="lg">
         <Navbar.Brand href="/">Peter Baile Chen</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          style={{ border: 'None' }}
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/">Gallery</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/">About</Nav.Link>
+            <Nav.Link href="/research">Research</Nav.Link>
             <Nav.Link href="/work">Work</Nav.Link>
-            <Nav.Link href="/blogs">Blogs</Nav.Link>
             <Nav.Link>
               <FooterLink href="https://github.com/peterbaile">
                 <i className="fab fa-github" />
@@ -113,7 +115,7 @@ const MyNavBar = () => (
               <FooterLink href="https://www.linkedin.com/in/peter-chen-ba7847153/">
                 <i className="fab fa-linkedin" />
               </FooterLink>
-              <FooterLink href="mailto: cbaile@seas.upenn.edu">
+              <FooterLink href="mailto:cbaile@seas.upenn.edu">
                 <i className="fas fa-envelope" />
               </FooterLink>
             </Nav.Link>
