@@ -58,8 +58,8 @@ const MyNavBar = () => (
           <MenuLink to="/research" className="no-color">
             <p> RESEARCH </p>
           </MenuLink>
-          <MenuLink to="/professional" className="no-color">
-            <p> PROFESSIONAL </p>
+          <MenuLink to="/work" className="no-color">
+            <p> WORK </p>
           </MenuLink>
           {/* <MenuLink to="/blogs" className="no-color">
             <p>BLOG</p>
